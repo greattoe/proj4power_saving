@@ -231,7 +231,7 @@ mysql> show tables;
 38 rows in set (0.02 sec)
 ```
 
-테이블 목록 중 현재 관심을 두고 있는 것은 `user`테이블이다. `user`테이블의 모든 레코드의 `user`필드와 `host`  출력을 위해 다음 명령을 실행시켜 보자.
+테이블 목록 중 현재 관심을 두고 있는 것은 `user`테이블이다. `user`테이블의 모든 레코드의 `user`필드와 `host` 필드 출력을 위해 다음 명령을 실행시켜 보자.
 
 ```
 select user, host from user;
@@ -252,9 +252,67 @@ mysql> select user, host from user;
 mysql>
 ```
 
-지금 설치한 MySQL DB에 등록된 사용자는 4명임을 알 수 있다. 
+지금 설치한 MySQL DB에 4개의 사용자 계정이 등록되어 있고, 모든 계정의 `host`가 `localhost`로 되어있다는 것을 알 수 있다. 여기 문제가 있다. 모든 사용자가 `localhost`에서만 DB에 연결할 수 있다는 것인데, ESP8266 보드가 WiFi 네트워크로 원격 호스트에서 접속해야 하기 때문이다. 따라서 기존의 사용자의 `host`를 변경 하거나, 원격 `host`에서 DB에 연결이 가능한 사용자를 등록해 주어야 한다. 
 
+어떤 `host`에서도 DB 연결이 가능한 사용자 `user1`을 등록하기 위해 다음 명령을 실행시켜 보자.
 
+```sql
+create user 'user1'@'%' identified by '1234';
+```
+
+```sql
+mysql> create user 'user1'@'%' identified by '1234';
+Query OK, 0 rows affected (0.02 sec)
+
+mysql>
+```
+
+`user`테이블의 모든 레코드의 `user`필드와 `host` 필드 출력을 위해 다음 명령을 다시 실행시켜 보자.
+
+```
+select user, host from user;
+```
+
+```sql
+mysql> select user, host from user;
++------------------+-----------+
+| user             | host      |
++------------------+-----------+
+| user1            | %         |
+| mysql.infoschema | localhost |
+| mysql.session    | localhost |
+| mysql.sys        | localhost |
+| root             | localhost |
++------------------+-----------+
+5 rows in set (0.00 sec)
+
+mysql>
+```
+
+`host` 가 `%`인 사용자 `user1`이 추가된 것을 확인할 수 있다. `host` 가 `%`라는 것은 어떤 호스트에서도 DB에 연결할 수 있다는 의미이다. 즉 `user1`은 어떤 원격 `host`에서도 DBDb에 연결할 수 있는 사용자라는 것입니다. 
+
+`user1`사용자에게 모든 데이터베이스와 그 테이블들에 접근할 수 있는 권한을 부여하기위해 다음 명령을 실행하여 보자.
+
+```
+GRANT ALL ON *.* TO 'user1'@'%';
+```
+
+```sql
+mysql> GRANT ALL ON *.* TO 'user1'@'%';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+```
+
+MySQL 설치 시, MySQL을 `MySQL`이라는 윈도우 서비스로 만들어 등록하여컴퓨터가 구동될 때, 해당서비스가 실행되도록 하였다. 현재 실행 중인 `MySQL` 서비스는 `user1`사용자가 등록되지 않은 채로 구동 중이므로 해당 서비스를 재시작하여 추가된 사용자 `user1`의 정보를 반영해 주어야 한다.
+
+윈도우 시작 버튼을 누르고 검색어 입력란에 `서비스`를 입력하여 검색된 <img src="./img/service_system.png" style="zoom: 67%;" />을 실행한다. 
+
+![](./img/win_service.png)
+
+서비스 목록에서 `MySQL`을 찾아 재시작 시킨다.
+
+![](./img/restart_mysql.png)
 
 
 
