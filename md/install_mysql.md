@@ -316,7 +316,7 @@ MySQL 설치 시, MySQL을 `MySQL`이라는 윈도우 서비스로 만들어 등
 
 
 
-
+스마트 폰의 `Play Store`를 실행 후, `hisql`을 검색하여 실행한다.
 
 
 
