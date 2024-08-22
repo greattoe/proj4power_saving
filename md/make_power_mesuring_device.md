@@ -224,7 +224,7 @@ Arduino IDE![](./img/arduino.png)를 실행 후, 스케치 메뉴의 `라이브�
 
  Arduino 폴더의 libraries폴더를 연다.
 
-![](./img\documents_arduino_libraries.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/documents_arduino_libraries.png)
 
 Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더를 연다.
 
