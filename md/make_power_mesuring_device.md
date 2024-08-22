@@ -214,7 +214,7 @@ Arduino IDE![](./img/arduino.png)를 실행 후, 스케치 메뉴의 `라이브�
 
 라이브러리 매니저에서 토픽에 `mysql`을 입력하여 검색된 라이브러리들 중 `MySQL Connector Arduino`를 설치한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\library_manager_mysql_connector_arduino.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/library_manager_mysql_connector_arduino.png)
 
 `MySQL Connector Arduino`라이브러리는 버그가 존재한다. `ESP-12E`모듈을 사용하는 NodeMCU보드에서 사용할 경우 문제를 일으키는데, 이를 해결하기 위해 라이브러리 소스코드를 수정해 주어야 한다.
 
