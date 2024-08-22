@@ -453,7 +453,7 @@ mysql> select * from power.dev01;
 mysql>
 ```
 
-#### `power`DB를 조회, 편집, 삽입,  삭제할 수 있는 웹앱 작성
+#### 3.5. `power`DB를 조회, 편집, 삽입,  삭제할 수 있는 웹앱 작성
 
 `Node.js Command Prompt`를 실행 후, 
 
