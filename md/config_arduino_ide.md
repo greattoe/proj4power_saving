@@ -89,7 +89,7 @@ ESP8266 보드의 LED가 1초간격으로 점멸하는 것을 확인한다.
 
 여기까지 확인 되었다면 아두이노 통합개발환경에서 ESP8266보드를 이용하기 위한 기본적인 설정은 완료된 것이다. 하지만 굳이 ESP8266 보드를 사용하려는 것은 WiFi를 이용하기 위해서 이므로 ESP8266 보드의  WiFi 기능 테스트를 위해 다음 예제를 업로드한다.
 
-espp8266_WiFiWebServer.ino
+esp8266_WiFiWebServer.ino
 
 ```c
 #include <ESP8266WiFi.h>
@@ -205,11 +205,11 @@ Server started
 
 브라우저 주소창에`192.168.178.109/gpio/0`를 입력하면 ESP8266 보드의 LED가 켜지고,
 
-![](./img\url_gpio_0.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_1.png)
 
 브라우저 주소창에`192.168.178.109/gpio/1`을 입력하면 ESP8266 보드의 LED가 꺼지는 것을 확인한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\url_gpio_1.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_0.png)
 
 
 
