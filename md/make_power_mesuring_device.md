@@ -85,7 +85,7 @@ float getVPP() {
 
 조립한 장치의 콘센트에 아래 그림과 같이 소비전력이 4(W)인 LED 전구를 연결하고 작성한 코드를 업로드한다.
 
-![](./img\load.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/load.png)
 
 시리얼모니터 실행 후 BAUDRATE를 115200으로 설정하면 다음과 같은 출력을 확인 할 수 있다.
 
