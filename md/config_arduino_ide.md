@@ -205,11 +205,11 @@ Server started
 
 브라우저 주소창에`192.168.178.109/gpio/0`를 입력하면 ESP8266 보드의 LED가 켜지고,
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_1.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_0.png)
 
 브라우저 주소창에`192.168.178.109/gpio/1`을 입력하면 ESP8266 보드의 LED가 꺼지는 것을 확인한다. 
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_0.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_1.png)
 
 
 
