@@ -106,7 +106,7 @@ Vp-p: 0.371(V)
 
 전력 = 전압 × 전류 = 220(V) × x(A) = 4(W) 이므로, 전류 = 4(W) ÷ 220(V) = 0.01818(A) 로 계산되는데, 위 시리얼 모니터의 출력을 보면 전류 측정값이 `0.01855`이므로 어느 정도 근사한 측정 결과가 나타난다는 것을 알 수 있다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\zmct103c_fine_tune.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/zmct103c_fine_tune.png)
 
 #### 3.4. 데이터베이스 준비
 
