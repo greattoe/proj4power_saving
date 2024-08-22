@@ -4,7 +4,7 @@
 
 다음과 같이 ESP8266 보드와 ZMCT103C 전류센서 모듈 및 기타 자재를 연결한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\power_mesuring_device.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/power_mesuring_device.png)
 
 ZMCT103C 전류 센서와 ESP8266 보드의 결선은 다음과 같다.
 
