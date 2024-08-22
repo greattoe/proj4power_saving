@@ -236,7 +236,7 @@ Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더의 src를 연
 
 Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더의 MySQL_Encrypt_Sha1.cpp 파일을 찾아 적당한 문서 편집기로 연다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\MySQL_Encrypt_Sha1_cpp.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/MySQL_Encrypt_Sha1_cpp.png)
 
 86행 부근의 `size_t Encrypt_SHA1::write()`함수 정의 부분을 찾아 다음과 같이 `return`문을 추가해 준다.
 
