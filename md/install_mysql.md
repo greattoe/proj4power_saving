@@ -314,9 +314,9 @@ MySQL 설치 시, MySQL을 `MySQL`이라는 윈도우 서비스로 만들어 등
 
 ![](./img/restart_mysql.png)
 
+스마트 폰의 `Play Store`를 실행 후, `hisql`을 검색하여 설치한다.
 
-
-스마트 폰의 `Play Store`를 실행 후, `hisql`을 검색하여 실행한다.
+![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\hisql1.png)
 
 
 

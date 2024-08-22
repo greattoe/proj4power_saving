@@ -24,6 +24,8 @@
 
 [**2. mysql 설치**](./md/install_mysql.md)
 
+[**3. DB기반 소비전력 측정장치 제작**](./md/make_power_mesuring_device.md)
+
 
 
 ---
