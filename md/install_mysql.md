@@ -118,7 +118,7 @@ Start MySQL Workbench after setup의 체크를 해제하고  [Finish] 버튼을 
 
 이것으로 MySQL 설치가 모두 완료되었다. 몇가지 확인을 위해 시작 - 모든 앱 - MySQL - MySQL 8.0 Command Line Client를 실행한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\MySQL80Command_Line_Client.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/MySQL80Command_Line_Client.png)
 
 ```
 Enter password: 
