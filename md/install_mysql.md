@@ -48,7 +48,7 @@ Installation에서는 전 단계에서 선택한 Product가 설치목록과 일�
 
 Product Configuration 화면에서Product 목록에서 `MySQL Server 8.0.39 - X64`, `Samples and Examples 8.0.39 - X86`를 확인 후, [Next] 버튼을 클릭한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\product_configuration.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/product_configuration.png)
 
 Type and Networking 화면에서 Show Advanced and Logging Options에 체크하고, 나머지는 기본 설정을 유지한 채로 [Next] 버튼을 클릭한다. 
 
