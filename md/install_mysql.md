@@ -52,7 +52,7 @@ Product Configuration 화면에서Product 목록에서 `MySQL Server 8.0.39 - X6
 
 Type and Networking 화면에서 Show Advanced and Logging Options에 체크하고, 나머지는 기본 설정을 유지한 채로 [Next] 버튼을 클릭한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\type_and_networking.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/type_and_networking.png)
 
 Authetification Method 화면에서는 Use Legcy Authentification Method( Retain MySQL 5.x Compatibility )를 선택 후, [Next] 버튼을 클릭한다. 
 
