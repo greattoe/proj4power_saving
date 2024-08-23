@@ -40,7 +40,7 @@ Select Products 단계에서 **1/3** MySQL Server 8.0.39 - X64를 선택 후, ![
 
 Installation에서는 전 단계에서 선택한 Product가 설치목록과 일치하는 지 확인 후 [Excute] 버튼을 클릭한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\installation.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/installation.png)
 
 설치결과 화면의 Status 필드가 모든 Product에 대해서 Complete인 것을 확인 후, [Next] 버튼을 클릭한다. 
 
