@@ -10,7 +10,7 @@
 
 위 다운로드 링크를 열면2가지 설치 파일이 제공되는데 그 중 303.6MB용량의 `mysql-installer-community-8.0.39.0.msi`파일을 다운로드 한다.
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\download_mysql.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/download_mysql.png)
 
 
 
