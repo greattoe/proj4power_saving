@@ -56,7 +56,7 @@ Type and Networking 화면에서 Show Advanced and Logging Options에 체크하�
 
 Authetification Method 화면에서는 Use Legcy Authentification Method( Retain MySQL 5.x Compatibility )를 선택 후, [Next] 버튼을 클릭한다. 
 
-![](./img\authentification_method.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/authentification_method.png)
 
 Accounts and Roles 화면에서 MySQL Root Password와 Repeat Password에 `1234`를, 입력 후, [Next] 버튼을 클릭한다. 
 
