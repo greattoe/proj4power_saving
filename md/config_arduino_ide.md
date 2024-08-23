@@ -34,7 +34,7 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 esp8266 보드 패키지가 설치되었으면, 툴 메뉴의 보드 항목을 ESP8266 `Boards(3.1.2)>` 의 `NodeMCU 1.0(ESP-12E Module)`로 설정한다. ![](./img/tool_board_nodemcu_v10.png)
 
-툴메뉴의 포트 설정을 위해 ![](./img/win_key.png)+ `R`키를 눌러 실행 창에 `devmgmt.msc`를 입력하여 장치관리자를 실행한다. 
+툴메뉴의 포트 설정을 위해 <img src="./img/win_key.png" style="zoom:80%;" />+ `R`키를 눌러 실행 창에 `devmgmt.msc`를 입력하여 장치관리자를 실행한다. 
 
 ESP 8266 보드를 USB포트에 연결할 때 장치관리자의 포트항목의 변화를 살핀다.
 
@@ -189,7 +189,7 @@ void loop() {
 }
 ```
 
-업로드가 완료되면 시리얼 모니터 아이콘 ![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\serial_monitor.png) 을 클릭하여시리얼모니터를연 후, Baud Rate를 115200으로 맞추고, ESP8266 보드의 `RST`버튼을 누르면 아래와 같은 메세지가 출력된다.
+업로드가 완료되면 시리얼 모니터 아이콘 ![](./img/serial_monitor.png) 을 클릭하여시리얼모니터를연 후, Baud Rate를 115200으로 맞추고, ESP8266 보드의 `RST`버튼을 누르면 아래와 같은 메세지가 출력된다.
 
 ``` 
 Connecting to S10e_Hotspot
@@ -205,12 +205,13 @@ Server started
 
 브라우저 주소창에`192.168.178.109/gpio/0`를 입력하면 ESP8266 보드의 LED가 켜지고,
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_0.png)
+![](./img/url_gpio_0.png)
 
 브라우저 주소창에`192.168.178.109/gpio/1`을 입력하면 ESP8266 보드의 LED가 꺼지는 것을 확인한다. 
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/url_gpio_1.png)
+![](./img/url_gpio_1.png)
 
 
 
 [목차](../README.md) 
+
