@@ -4,7 +4,7 @@
 
 다음과 같이 ESP8266 보드와 ZMCT103C 전류센서 모듈 및 기타 자재를 연결한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/power_mesuring_device.png)
+![](./img/power_mesuring_device.png)
 
 ZMCT103C 전류 센서와 ESP8266 보드의 결선은 다음과 같다.
 
@@ -85,7 +85,7 @@ float getVPP() {
 
 조립한 장치의 콘센트에 아래 그림과 같이 소비전력이 4(W)인 LED 전구를 연결하고 작성한 코드를 업로드한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/load.png)
+![](./img/load.png)
 
 시리얼모니터 실행 후 BAUDRATE를 115200으로 설정하면 다음과 같은 출력을 확인 할 수 있다.
 
@@ -224,11 +224,11 @@ Arduino IDE![](./img/arduino.png)를 실행 후, 스케치 메뉴의 `라이브�
 
  Arduino 폴더의 libraries폴더를 연다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/documents_arduino_libraries.png)
+![](./img/documents_arduino_libraries.png)
 
 Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더를 연다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/MySQL_Connector_Arduino.png)
+![](./img/MySQL_Connector_Arduino.png)
 
 Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더의 src를 연다.
 
@@ -236,7 +236,7 @@ Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더의 src를 연
 
 Arduino 폴더의 libraries폴더의 MySQL_Connector_Arduino폴더의 MySQL_Encrypt_Sha1.cpp 파일을 찾아 적당한 문서 편집기로 연다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/MySQL_Encrypt_Sha1_cpp.png)
+![](./img/MySQL_Encrypt_Sha1_cpp.png)
 
 86행 부근의 `size_t Encrypt_SHA1::write()`함수 정의 부분을 찾아 다음과 같이 `return`문을 추가해 준다.
 
@@ -405,7 +405,7 @@ float getVPP() {
 }
 ```
 
-업로드가 완료되면 시리얼모니터![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\serial_monitor.png)를 열고 BAUDRATE를 115200으로 설정한다.
+업로드가 완료되면 시리얼모니터![](./img/serial_monitor.png)를 열고 BAUDRATE를 115200으로 설정한다.
 
 ```
 ....
