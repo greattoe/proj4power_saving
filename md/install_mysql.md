@@ -22,7 +22,7 @@ Choosing Setup Type 단계에서 Custom을 선택 후 [Next] 버튼을 클릭한
 
 Select Products 단계에서 **1/3** MySQL Server 8.0.39 - X64를 선택 후, ![](./img/select_arrow.png) 를 클릭하여 Products To Be Installed 영역에 `MySQL Server 8.0.39 - X64`가 표시되게 한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\select_product_1.png)
+![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/select_product_1.png)
 
 같은 요령으로 **2/3** MySQLWorkbench 8.0.38 - X64를 선택 후, ![](./img/select_arrow.png) 를 클릭하여 Products To Be Installed 영역에 `MySQLWorkbench 8.0.38 - X64`가 표시되게 한다. 
 
