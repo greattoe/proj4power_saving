@@ -72,11 +72,11 @@ Server File Permissions에서는 모든 선택을 기존값을 유지한 채로 
 
 Logging Options 역시 모든 선택을 기존값을 유지한 채로  [Next] 버튼을 클릭한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\logging_options.png)
+![](./img/logging_options.png)
 
 Advanced Options 역시 모든 선택을 기존값을 유지한 채로  [Next] 버튼을 클릭한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\advanced options.png)
+![](./img/advanced options.png)
 
 Apply Configuration 에서 지금까지의 설정을 적용하기 위해 [Excute] 버튼을 클릭한다. 
 
@@ -88,7 +88,7 @@ Apply Configuration 에서 지금까지의 설정을 적용하기 위해 [Excute
 
 Product Configuration의 Product에 MySQL Server 8.0.39의 Status가 Configuration complete인 것을 확이 후,  [Next] 버튼을 클릭한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\product_configuration2.png)
+![](./img\product_configuration2.png)
 
 Connect To Server화면에서 Password에 `1234`를 입력 후, [Check] 버튼을 클릭한다. 
 
@@ -96,7 +96,7 @@ Connect To Server화면에서 Password에 `1234`를 입력 후, [Check] 버튼�
 
 Status에 초록 바탕에 Connection Succeeded. 메세지 확인 후,  [Next] 버튼을 클릭한다. 
 
-![](D:\Dropbox\myGit\Proj4PowerSaving\md\img\connect_to_server2.png)
+![](./img/connect_to_server2.png)
 
 
 
