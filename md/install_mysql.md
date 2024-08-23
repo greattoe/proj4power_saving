@@ -10,7 +10,7 @@
 
 위 다운로드 링크를 열면2가지 설치 파일이 제공되는데 그 중 303.6MB용량의 `mysql-installer-community-8.0.39.0.msi`파일을 다운로드 한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/download_mysql.png)
+![](./img/download_mysql.png)
 
 
 
@@ -22,7 +22,7 @@ Choosing Setup Type 단계에서 Custom을 선택 후 [Next] 버튼을 클릭한
 
 Select Products 단계에서 **1/3** MySQL Server 8.0.39 - X64를 선택 후, ![](./img/select_arrow.png) 를 클릭하여 Products To Be Installed 영역에 `MySQL Server 8.0.39 - X64`가 표시되게 한다. 
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/select_product_1.png)
+![](./img/select_product_1.png)
 
 같은 요령으로 **2/3** MySQLWorkbench 8.0.38 - X64를 선택 후, ![](./img/select_arrow.png) 를 클릭하여 Products To Be Installed 영역에 `MySQLWorkbench 8.0.38 - X64`가 표시되게 한다. 
 
@@ -40,7 +40,7 @@ Select Products 단계에서 **1/3** MySQL Server 8.0.39 - X64를 선택 후, ![
 
 Installation에서는 전 단계에서 선택한 Product가 설치목록과 일치하는 지 확인 후 [Excute] 버튼을 클릭한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/installation.png)
+![](./img/installation.png)
 
 설치결과 화면의 Status 필드가 모든 Product에 대해서 Complete인 것을 확인 후, [Next] 버튼을 클릭한다. 
 
@@ -48,11 +48,11 @@ Installation에서는 전 단계에서 선택한 Product가 설치목록과 일�
 
 Product Configuration 화면에서Product 목록에서 `MySQL Server 8.0.39 - X64`, `Samples and Examples 8.0.39 - X86`를 확인 후, [Next] 버튼을 클릭한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/product_configuration.png)
+![](./img/product_configuration.png)
 
 Type and Networking 화면에서 Show Advanced and Logging Options에 체크하고, 나머지는 기본 설정을 유지한 채로 [Next] 버튼을 클릭한다. 
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/type_and_networking.png)
+![](./img/type_and_networking.png)
 
 Authetification Method 화면에서는 Use Legcy Authentification Method( Retain MySQL 5.x Compatibility )를 선택 후, [Next] 버튼을 클릭한다. 
 
@@ -60,7 +60,7 @@ Authetification Method 화면에서는 Use Legcy Authentification Method( Retain
 
 Accounts and Roles 화면에서 MySQL Root Password와 Repeat Password에 `1234`를, 입력 후, [Next] 버튼을 클릭한다. 
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/account_and_roles.png)
+![](./img/account_and_roles.png)
 
 Windows Service 화면에서는 Windows Service에 `MySQL`을 입력 후, 나머지 설정은 기존값을 유지한 채로 [Next] 버튼을 클릭한다. 
 
@@ -118,7 +118,7 @@ Start MySQL Workbench after setup의 체크를 해제하고  [Finish] 버튼을 
 
 이것으로 MySQL 설치가 모두 완료되었다. 몇가지 확인을 위해 시작 - 모든 앱 - MySQL - MySQL 8.0 Command Line Client를 실행한다.
 
-![](https://github.com/greattoe/proj4power_saving/blob/master/md/img/MySQL80Command_Line_Client.png)
+![](./img/MySQL80Command_Line_Client.png)
 
 ```
 Enter password: 
