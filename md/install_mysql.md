@@ -1,10 +1,10 @@
-### MySQL 설치 및 설정
+### 2. MySQL 설치 및 설정
 
 ---
 
 
 
-
+#### 2.1. MySQL Community 8.0 설치
 
 [**MySQL Community8.0 최신버전 다운로드**](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 
@@ -116,7 +116,9 @@ Start MySQL Workbench after setup의 체크를 해제하고  [Finish] 버튼을 
 
 ![](./img/installation_complete.png)
 
-이것으로 MySQL 설치가 모두 완료되었다. 몇가지 확인을 위해 시작 - 모든 앱 - MySQL - MySQL 8.0 Command Line Client를 실행한다.
+#### 2.2. MySQL 설치 확인 및 원격 연결을 위한 사용자 추가
+
+몇가지 확인 및 설정을 위해 시작 - 모든 앱 - MySQL - MySQL 8.0 Command Line Client를 실행한다.
 
 ![](./img/MySQL80Command_Line_Client.png)
 
@@ -146,10 +148,6 @@ mysql>
 사용 가능한 DB 목록을 출력하기 위해 다음 명령을 실행시켜 보자
 
 ```sql
-show databases;
-```
-
-```sql
 mysql> show databases;
 +--------------------+
 | Database           |
@@ -166,11 +164,7 @@ mysql> show databases;
 mysql>
 ```
 
-작업 DB를 `mtsql`로 변경하기 위해 다음 명령을 실행시켜 보자.
-
-```sql
-use mysql;
-```
+작업 DB를 `mysql`로 변경하기 위해 다음 명령을 실행시켜 보자.
 
 ```sql
 mysql> use mysql
@@ -179,10 +173,6 @@ mysql>
 ```
 
 `mysql` DB의 테이블 목록을 출력하기 위해 다음 명령을 실행시켜 보자.
-
-```
-show tables
-```
 
 ```sql
 mysql> show tables;
@@ -234,10 +224,6 @@ mysql> show tables;
 테이블 목록 중 현재 관심을 두고 있는 것은 `user`테이블이다. `user`테이블의 모든 레코드의 `user`필드와 `host` 필드 출력을 위해 다음 명령을 실행시켜 보자.
 
 ```
-select user, host from user;
-```
-
-```
 mysql> select user, host from user;
 +------------------+-----------+
 | user             | host      |
@@ -252,13 +238,9 @@ mysql> select user, host from user;
 mysql>
 ```
 
-지금 설치한 MySQL DB에 4개의 사용자 계정이 등록되어 있고, 모든 계정의 `host`가 `localhost`로 되어있다는 것을 알 수 있다. 여기 문제가 있다. 모든 사용자가 `localhost`에서만 DB에 연결할 수 있다는 것인데, ESP8266 보드가 WiFi 네트워크로 원격 호스트에서 접속해야 하기 때문이다. 따라서 기존의 사용자의 `host`를 변경 하거나, 원격 `host`에서 DB에 연결이 가능한 사용자를 등록해 주어야 한다. 
+`mysql` DB에 4개의 사용자 계정이 등록되어 있고, 모든 계정의 `host`가 `localhost`로 되어있다는 것을 알 수 있다. 여기에 문제가 있다. 모든 사용자가 `localhost`에서만 DB에 연결할 수 있다는 것인데, ESP8266 보드가 WiFi 네트워크로 원격 호스트에서 접속해야 하기 때문이다. 따라서 기존의 사용자의 `host`를 변경 하거나, 원격 `host`에서 DB에 연결이 가능한 사용자를 등록해 주어야 한다. 
 
 어떤 `host`에서도 DB 연결이 가능한 사용자 `user1`을 등록하기 위해 다음 명령을 실행시켜 보자.
-
-```sql
-create user 'user1'@'%' identified by '1234';
-```
 
 ```sql
 mysql> create user 'user1'@'%' identified by '1234';
@@ -289,7 +271,7 @@ mysql> select user, host from user;
 mysql>
 ```
 
-`host` 가 `%`인 사용자 `user1`이 추가된 것을 확인할 수 있다. `host` 가 `%`라는 것은 어떤 호스트에서도 DB에 연결할 수 있다는 의미이다. 즉 `user1`은 어떤 원격 `host`에서도 DBDb에 연결할 수 있는 사용자라는 것입니다. 
+`host` 가 `%`인 사용자 `user1`이 추가된 것을 확인할 수 있다. `host` 가 `%`라는 것은 어떤 호스트에서도 DB에 연결할 수 있다는 의미이다. 즉 `user1`은 어떤 원격 `host`에서도 DBDb에 연결할 수 있는 사용자라는 의미입니다. 
 
 `user1`사용자에게 모든 데이터베이스와 그 테이블들에 접근할 수 있는 권한을 부여하기위해 다음 명령을 실행하여 보자.
 
@@ -314,15 +296,33 @@ MySQL 설치 시, MySQL을 `MySQL`이라는 윈도우 서비스로 만들어 등
 
 ![](./img/restart_mysql.png)
 
+#### 2.3. 스마트폰을 이용한 DB 원격 연결 테스트
+
 스마트 폰의 `Play Store`를 실행 후, `hisql`을 검색하여 설치한다.
 
 ![](./img/hisql1.png)
 
+스마트폰의 WiFi연결을 MySQL이 설치된 PC가 연결되어 있는 WiFi네트워크에 연결한다.
 
+`hisql`을 실행 한다.
 
+MySQL이 설치된 PC의 IP주소를 알아내기 위해 아래 그림에 **①**, **②**로 표시된 곳을 순서대로 클릭한다. 
 
+![](./img/pc_network_info1.png)
 
+아래 그림에 표시한 **ⓘ**를 클릭한다. 
 
+![](./img/pc_network_info2.png)
+
+네트워크 및 인터넷 정보 창의 IPv4 주소 항목에서 IP 주소를 알 수 있다. 
+
+![](./img/pc_network_info3.png)
+
+`hisql`의 **연결들** 화면에서 [+]표시를 터치하여 **연결편집기**를 열고, **서버 호스트/IP**에 위에서 알아낸 IP주소( 이 경우 `172.16.0.7` )를 입력하고, **포트**는 기본값인 `3306`을 그대로 유지한다. **사용자이름**에는 앞서 원격 호스트에서의 연결을위해 생성한 사용자 `user1`을, **비밀번호**에는 user1의 패스워드 `1234`를 입력 후 지금까지 입력한 연결정보를 저장하기위해 ![](./img/save.png)를 터치한다.
+
+저장된 연결 중 접속하고자 하는 연결의 ![](./img/three_dot.png)표시를 터치 후, **연결하기**를 터치한다. 연결이 되면 아래 그림과 같이 DB 목록이 나타난다. 
+
+![](./img/hisql2.png)
 
 
 
