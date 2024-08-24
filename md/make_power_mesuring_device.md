@@ -14,6 +14,8 @@ ZMCT103C 전류 센서와 ESP8266 보드의 결선은 다음과 같다.
 | GND      | GND     |
 | OUT      | A0      |
 
+![](./img/final_result.png)
+
 #### 3.2 전류 및 전력 측정 아두이노 코드 작성
 
 `zmct103c_current.ino`
